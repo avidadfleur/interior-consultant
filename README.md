@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://relaxed-fudge-621ced.netlify.app/">
+    <a href="https://avidadfleur.github.io/interior-consultant/">
       Solution
     </a>
     <span> | </span>
@@ -70,5 +70,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@your-username](https://{github.com/avidadfleur})
-- Twitter [@your-twitter](https://{twitter.com/laviedefleur})
+- GitHub [@avidadfleur](https://github.com/avidadfleur)
+- Twitter [@laviedefleur](https://twitter.com/laviedefleur)
