@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+  <div id="container">
+    <header>
+
+      <div class="title">
+        <span>THIS INTERIOR</span>
+      </div>
+
+      <div class="mobile-nav" id="mobile-nav">
+        <div class="list">
+          <a href="#" class="mobile-navigation--item">Home</a>
+          <a href="#" class="mobile-navigation--item">Collection</a>
+          <a href="#" class="mobile-navigation--item">About</a>
+          <a href="#" class="mobile-navigation--item">Contact</a>
+        </div>
+      </div>
+
+      <button class="hamburger-button" id="hamburger-button" onclick="toggleNavigation()" onclick="toggleNavigation">
+        <div class="hamburger-button__bar"></div>
+        <div class="hamburger-button__bar"></div>
+        <div class="hamburger-button__bar"></div>
+      </button>
+
+      <div class="nav" id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    </header>
+
+    <main>
+      <div class="main-container">
+        <div class="text-container">
+          <h1>Modern interior</h1>
+          <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+          <span>Read more --></span>
+        </div>
+
+        <div class="image-container">
+          <img src="photo1.png" alt="interior design">
+        </div>
+      </div>
+
+      <div class="box">
+
+        <div class="box-title">
+          <div class="title-figure">
+            <img src="photo2.png" alt="">
+          </div>
+          <div class="title-presentation">
+            <h5>Aliza Webber</h5>
+            <span>Interior designer</span>
+          </div>
+        </div>
+
+        <div class="designed-by">
+          <h3>Designed in 2020 by Aliza Webber</h3>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span>created by <a href="https://github.com/avidadfleur">avidadfleur</a> - devChallenges.io</span>
+    </footer>
+
+  </div>
+
+  <script>
+  
+    const toggle = (elementId) => {
+      const element = document.getElementById(elementId);
+
+      if (element.classList.contains(elementId + "--open")) {
+        element.classList.remove(elementId + "--open")
+      } else {
+        element.classList.add(elementId + "--open")
+      }
+    }
+
+    const toggleNavigation = () => {
+      toggle("mobile-nav");
+      toggle("hamburger-button");
+    }
+
+  </script>
+
+</body>
+</html>
